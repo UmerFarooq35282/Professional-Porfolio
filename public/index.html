@@ -7,6 +7,12 @@
     <link rel="icon" type="image/png" href="assets/images/mainImage.png" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -368,101 +374,110 @@
           Projects
         </h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6"
-          >
-            <img
-              src="assets/images/PortfolioImage.PNG"
-              alt="Project 1"
-              class="rounded-xl mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">
-              Portfolio Website
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              A fully responsive developer portfolio built with HTML, Tailwind
-              CSS, and JavaScript. Clean UI and modern layout.
-            </p>
-            <div class="flex items-center space-x-4">
-              <a
-                href="https://your-live-link.com"
-                target="_blank"
-                class="text-indigo-600 font-medium hover:underline"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/yourusername/project1"
-                target="_blank"
-                class="text-gray-600 hover:text-indigo-600 transition"
-                >GitHub</a
-              >
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Project Slide 1 -->
+            <div
+              class="swiper-slide bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6"
+            >
+              <img
+                src="assets/images/PortfolioImage.PNG"
+                alt="Project 1"
+                class="rounded-xl mb-4 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Portfolio Website
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                A fully responsive developer portfolio built with HTML, Tailwind
+                CSS, and JavaScript. Clean UI and modern layout.
+              </p>
+              <div class="flex items-center space-x-4">
+                <a
+                  href="https://umerfarooqportfolio.web.app"
+                  target="_blank"
+                  class="text-indigo-600 font-medium hover:underline"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/UmerFarooq35282/Professional-Porfolio"
+                  target="_blank"
+                  class="text-gray-600 hover:text-indigo-600 transition"
+                  >GitHub</a
+                >
+              </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="swiper-slide bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6"
+            >
+              <img
+                src="assets/images/bookApp.png"
+                alt="Project 2"
+                class="rounded-xl mb-4 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Bookstore App (Flutter)
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                A full-stack bookstore app with React frontend and Express +
+                MongoDB backend. Includes search, CRUD, and user auth.
+              </p>
+              <div class="flex items-center space-x-4">
+                <a
+                  href="https://your-bookstore-app.com"
+                  target="_blank"
+                  class="text-indigo-600 font-medium hover:underline"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/UmerFarooq35282/FlutterBookAppProject"
+                  target="_blank"
+                  class="text-gray-600 hover:text-indigo-600 transition"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="swiper-slide bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6"
+            >
+              <img
+                src="assets/images/project3.png"
+                alt="Project 3"
+                class="rounded-xl mb-4 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Chat App (Socket.IO)
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Real-time chat app using Node.js, Socket.IO, and Tailwind.
+                Features private rooms and instant messaging.
+              </p>
+              <div class="flex items-center space-x-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-indigo-600 font-medium hover:underline"
+                  >Live Demo</a
+                >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-gray-600 hover:text-indigo-600 transition"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+
+            <!-- Add more slides here -->
           </div>
 
-          <!-- Project Card 2 -->
-          <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6"
-          >
-            <img
-              src="assets/images/project2.png"
-              alt="Project 2"
-              class="rounded-xl mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">
-              Bookstore App (MERN)
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              A full-stack bookstore app with React frontend and Express +
-              MongoDB backend. Includes search, CRUD, and user auth.
-            </p>
-            <div class="flex items-center space-x-4">
-              <a
-                href="https://your-bookstore-app.com"
-                target="_blank"
-                class="text-indigo-600 font-medium hover:underline"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/yourusername/bookstore"
-                target="_blank"
-                class="text-gray-600 hover:text-indigo-600 transition"
-                >GitHub</a
-              >
-            </div>
-          </div>
-
-          <!-- Project Card 3 -->
-          <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6"
-          >
-            <img
-              src="assets/images/project3.png"
-              alt="Project 3"
-              class="rounded-xl mb-4 w-full h-48 object-cover"
-            />
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">
-              Chat App (Socket.IO)
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Real-time chat application using Node.js, Socket.IO, and Tailwind.
-              Features private rooms and instant messaging.
-            </p>
-            <div class="flex items-center space-x-4">
-              <a
-                href="https://your-chat-app.com"
-                target="_blank"
-                class="text-indigo-600 font-medium hover:underline"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/yourusername/chatapp"
-                target="_blank"
-                class="text-gray-600 hover:text-indigo-600 transition"
-                >GitHub</a
-              >
-            </div>
-          </div>
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination mt-8"></div>
         </div>
       </div>
     </section>
@@ -706,6 +721,9 @@
     <script>
       lucide.createIcons();
     </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script type="module" src="js/script.js"></script>
   </body>
 </html>
