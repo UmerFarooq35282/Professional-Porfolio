@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <style>
       html {
@@ -493,25 +494,39 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Contact Form -->
-          <form class="space-y-6 bg-gray-50 p-8 rounded-2xl shadow-md">
+          <form
+            id="contactForm"
+            class="space-y-6 bg-gray-50 p-8 rounded-2xl shadow-md"
+          >
+            <!-- Name Field -->
             <div>
               <label class="block text-gray-700 font-medium mb-1">Name</label>
               <input
                 type="text"
                 placeholder="Your name"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                id="submitterName"
               />
+              <p id="nameError" class="text-red-500 text-sm mt-1 hidden">
+                Please enter your name.
+              </p>
             </div>
 
+            <!-- Email Field -->
             <div>
               <label class="block text-gray-700 font-medium mb-1">Email</label>
               <input
                 type="email"
                 placeholder="you@example.com"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                id="submitterEmail"
               />
+              <p id="emailError" class="text-red-500 text-sm mt-1 hidden">
+                Please enter a valid email address.
+              </p>
             </div>
 
+            <!-- Message Field -->
             <div>
               <label class="block text-gray-700 font-medium mb-1"
                 >Message</label
@@ -520,9 +535,14 @@
                 rows="4"
                 placeholder="Your message"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                id="submitterMessage"
               ></textarea>
+              <p id="messageError" class="text-red-500 text-sm mt-1 hidden">
+                Please enter your message.
+              </p>
             </div>
 
+            <!-- Submit Button -->
             <button
               type="submit"
               class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-xl transition"
@@ -609,7 +629,7 @@
               </svg>
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/UmerFarooq35282"
               target="_blank"
               aria-label="GitHub"
               class="hover:text-white transition"
@@ -626,7 +646,7 @@
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/umer-farooq-861ba9342"
               target="_blank"
               aria-label="LinkedIn"
               class="hover:text-white transition"
@@ -718,6 +738,8 @@
     >
       <i data-lucide="arrow-up" class="w-5 h-5"></i>
     </button>
+
+
     <script>
       lucide.createIcons();
     </script>
@@ -725,5 +747,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/contact.js"></script>
   </body>
 </html>
